@@ -1,0 +1,101 @@
+h1 {
+  font-size: 45px;
+  margin: 2px 2px;
+  background: rgb(240, 248, 255);
+  border-radius: 2px;
+  padding: 8px 0 8px 20px;
+  max-width: 80%;
+}
+h2 {
+  margin: 10px 0px 0px 50px;
+}
+h2 .current-weather-temp {
+  margin: 0px 2px 0px -60px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+h2 .current-weather-type {
+  margin: 0px 0px 0px 50px;
+  font-weight: normal;
+}
+h2 .header-current-weather {
+  font-size: 38px;
+  font-weight: normal;
+  margin: 0px 0px -5px 15px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+  margin: 10px 10px 20px -5px;
+  font-size: 20px;
+}
+.monday-weather {
+  background: rgba(240, 248, 255, 0.8);
+  padding: 10px 14px 5px 14px;
+  margin: 2px;
+  border-radius: 2px;
+}
+.tuesday-weather {
+  background: rgba(240, 248, 255, 0.8);
+  padding: 10px 14px 5px 14px;
+  margin: 2px;
+  border-radius: 2px;
+}
+.wednesday-weather {
+  background: rgba(240, 248, 255, 0.8);
+  padding: 10px 7px 5px 7px;
+  margin: 2px;
+  border-radius: 2px;
+}
+.thursday-weather {
+  background: rgba(240, 248, 255, 0.8);
+  padding: 10px 14px 5px 14px;
+  margin: 2px;
+  border-radius: 2px;
+}
+.friday-weather {
+  background: rgba(240, 248, 255, 0.8);
+  padding: 10px 14px 5px 14px;
+  margin: 2px;
+  border-radius: 2px;
+}
+.weekday-temp {
+  font-weight: normal;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.weekdays-emoji {
+  text-align: center;
+  font-size: 50px;
+}
+.weather-weekdays {
+  margin-top: 30px;
+}
+.search-box {
+  text-align: right;
+  margin: 10px 20px;
+  font-size: 20px;
+}
+.card {
+  margin: 60px auto;
+  background: rgb(147, 197, 240)
+    linear-gradient(
+      to bottom right,
+      rgb(94, 192, 248),
+      rgb(46, 152, 239),
+      rgb(52, 52, 253),
+      rgb(36, 36, 246)
+    );
+}
+.units {
+  font-size: 18px;
+}
+.todays-date {
+  margin: -40px 0px 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
