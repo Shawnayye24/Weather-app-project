@@ -1,5 +1,6 @@
 let now = new Date();
 let todaysDate = document.querySelector("#todays-date");
+let todaysTime = document.querySelector("#todays-time");
 
 let date = now.getDate();
 let hours = now.getHours();
@@ -32,7 +33,8 @@ let months = [
   "Dec",
 ];
 let month = months[now.getMonth()];
-todaysDate.innerHTML = ` ${month} ${date}, ${year}`;
+todaysDate.innerHTML = ` Date: ${month} ${date}, ${year} `;
+todaysTime.innerHTML = `Time: ${hours}:${minutes}`;
 
 function showWeatherCondition(response) {
   console.log(response.data.name);

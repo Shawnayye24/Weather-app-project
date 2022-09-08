@@ -38,20 +38,24 @@
           </form>
         </div>
         <div class="container">
+          <p class="todays-date" id="todays-date"></p>
+          <p class="todays-time" id="todays-time"></p>
+          <hr />
           <div class="row">
             <div class="col">
-              <p class="todays-date" id="todays-date"></p>
-              <h1 id="city-name"></h1>
-              <ul class="weather-description">
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> mph</li>
-                <li>
-                  High: <span id="high-temp"></span>° Low:
-                  <span id="low-temp"></span>°
-                </li>
-              </ul>
+              <div class="city-border">
+                <h1 id="city-name"></h1>
+                <ul class="weather-description">
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> mph</li>
+                  <li>
+                    High: <span id="high-temp"></span>° Low:
+                    <span id="low-temp"></span>°
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-6">
+            <div class="col">
               <h2>
                 <div class="header-current-weather">Currently</div>
                 <div class="current-weather-temp" id="current-weather-temp">
@@ -99,15 +103,16 @@
           </h3>
         </div>
       </div>
+      <p class="link-info">
+        <a
+          href="https://github.com/Shawnayye24/Weather-app-project"
+          target="_blank"
+          class="git-hub-link"
+          >Open-source code</a
+        >
+        <span class="created-by"> by Shawnee Rowe</span>
+      </p>
     </div>
-    <p>
-      <a
-        href="https://github.com/Shawnayye24/Weather-app-project"
-        target="_blank"
-        >Open-source code</a
-      >
-      ,by Shawnee Rowe
-    </p>
 
     <script src="src/index.js"></script>
   </body>
