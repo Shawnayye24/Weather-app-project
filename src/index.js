@@ -32,7 +32,7 @@ let months = [
   "Dec",
 ];
 let month = months[now.getMonth()];
-todaysDate.innerHTML = ` ${day}, ${hours}:${minutes}`;
+todaysDate.innerHTML = ` ${month} ${date}, ${year}`;
 
 function showWeatherCondition(response) {
   console.log(response.data.name);
