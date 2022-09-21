@@ -101,4 +101,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("New york");
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
