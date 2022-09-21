@@ -42,7 +42,7 @@
           <p class="todays-time" id="todays-time"></p>
           <hr />
           <div class="row">
-            <div class="col">
+            <div class="col-6">
               <div class="city-border">
                 <h1 id="city-name"></h1>
                 <ul class="weather-description">
@@ -55,16 +55,18 @@
                 </ul>
               </div>
             </div>
-            <div class="col">
+            <div class="col-5">
               <h2>
                 <div class="header-current-weather">Currently</div>
-                <div class="current-weather-temp" id="current-weather-temp">
-                  ☀️ <span class="temperature" id="temperature"></span>
+                <div class="current-weather-temp d-flex align-items-start" id="current-weather-temp">
+                  <span class="current-weather-emoji" id="current-weather-emoji"></span><span class="temperature" id="temperature"></span>
+                   <span class="units">°C | °F</span>
+                  </div>
+                  <div
+                    class="current-weather-type"
+                    id="current-weather-type"
+                  ></div>
                 </div>
-                <div
-                  class="current-weather-type"
-                  id="current-weather-type"
-                ></div>
               </h2>
             </div>
           </div>
@@ -102,18 +104,16 @@
             </div>
           </h3>
         </div>
+        <p class="link-info">
+          <a
+            href="https://github.com/Shawnayye24/Weather-app-project"
+            target="_blank"
+            class="git-hub-link"
+            >Open-source code</a
+          >
+          <span class="created-by"> by Shawnee Rowe</span>
       </div>
-      <p class="link-info">
-        <a
-          href="https://github.com/Shawnayye24/Weather-app-project"
-          target="_blank"
-          class="git-hub-link"
-          >Open-source code</a
-        >
-        <span class="created-by"> by Shawnee Rowe</span>
-      </p>
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
