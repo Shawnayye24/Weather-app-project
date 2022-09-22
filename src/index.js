@@ -47,6 +47,7 @@ function showWeatherCondition(response) {
   let windElement = document.querySelector("#wind");
   let currentHighTemp = document.querySelector("#high-temp");
   let currentLowTemp = document.querySelector("#low-temp");
+  let iconElement = document.querySelector("#icon");
 
   fahrenheitTemperature = response.data.main.temp;
 
@@ -57,6 +58,10 @@ function showWeatherCondition(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   currentHighTemp.innerHTML = Math.round(response.data.main.temp_max);
   currentLowTemp.innerHTML = Math.round(response.data.main.temp_min);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
@@ -107,3 +112,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 searchCity("New york");
+
+axios.get(apiUrl).then(showWeatherCondition);

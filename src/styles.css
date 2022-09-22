@@ -37,10 +37,9 @@ h2 .current-weather-emoji {
   font-size: 100px;
 }
 
-h2 .current-weather-image {
+h2 .current-weather-icon {
   margin-top: -7px;
-  font-size: 100px;
-  size: 30px;
+  margin-left: -50px;
 }
 .units {
   font-size: 18px;
