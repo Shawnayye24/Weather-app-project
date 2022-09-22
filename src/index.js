@@ -37,26 +37,25 @@ todaysDate.innerHTML = `${month} ${date}, ${year} `;
 todaysTime.innerHTML = `Time: ${hours}:${minutes}`;
 
 function showWeatherCondition(response) {
-  console.log(response.data.name);
-  console.log(response.data);
-  document.querySelector("#city-name").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+  let cityElement = document.querySelector("#city-name");
+  let temperatureElement = document.querySelector("#temperature");
+  let currentWeatherDecscription = document.querySelector(
+    "#current-weather-type"
   );
-  document.querySelector("#current-weather-type").innerHTML =
-    response.data.weather[0].description;
-  document.querySelector("#humidity").innerHTML = Math.round(
-    response.data.main.humidity
-  );
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector("#high-temp").innerHTML = Math.round(
-    response.data.main.temp_max
-  );
-  document.querySelector("#low-temp").innerHTML = Math.round(
-    response.data.main.temp_min
-  );
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let currentHighTemp = document.querySelector("#high-temp");
+  let currentLowTemp = document.querySelector("#low-temp");
+
+  fahrenheitTemperature = response.data.main.temp;
+
+  cityElement.innerHTML = response.data.name;
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  currentWeatherDecscription.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = Math.round(response.data.main.humidity);
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  currentHighTemp.innerHTML = Math.round(response.data.main.temp_max);
+  currentLowTemp.innerHTML = Math.round(response.data.main.temp_min);
 }
 
 function searchCity(city) {
@@ -98,7 +97,5 @@ form.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+let fahrenheitTemperature = null;
 searchCity("New york");
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
