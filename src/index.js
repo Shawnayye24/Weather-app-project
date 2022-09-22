@@ -37,6 +37,7 @@ todaysDate.innerHTML = `${month} ${date}, ${year} `;
 todaysTime.innerHTML = `Time: ${hours}:${minutes}`;
 
 function showWeatherCondition(response) {
+  console.log(response.data);
   let cityElement = document.querySelector("#city-name");
   let temperatureElement = document.querySelector("#temperature");
   let currentWeatherDecscription = document.querySelector(
