@@ -21,11 +21,11 @@ h2 .current-weather-temp {
   font-size: 90px;
   font-weight: bold;
   color: white;
-  margin: 20px 0px 0px 100px;
+  margin: 20px 0px 0px 90px;
 }
 h2 .current-weather-type {
   text-align: center;
-  margin-right: 10px;
+  margin-right: 14px;
   font-weight: normal;
   font-size: 40px;
   color: rgb(0, 0, 0);
