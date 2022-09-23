@@ -6,6 +6,10 @@ let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();
 let year = now.getFullYear();
+let AmOrPm = hours >= 12 ? "pm" : "am";
+let finalTime = `Time - ${hours} : ${minutes} ${AmOrPm}`;
+
+hours = hours % 12 || 12;
 
 let days = [
   "Sunday",
