@@ -47,7 +47,7 @@ function showWeatherCondition(response) {
   let windElement = document.querySelector("#wind");
   let currentHighTemp = document.querySelector("#high-temp");
   let currentLowTemp = document.querySelector("#low-temp");
-  let iconElement = document.querySelector("#icon");
+  let iconElement = document.querySelector("#current-weather-icon");
 
   fahrenheitTemperature = response.data.main.temp;
 
@@ -112,5 +112,3 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 searchCity("New york");
-
-axios.get(apiUrl).then(showWeatherCondition);
