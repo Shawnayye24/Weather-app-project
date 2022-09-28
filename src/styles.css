@@ -11,29 +11,29 @@ h2 {
   margin: 10px 0px 0px 50px;
 }
 h2 .header-current-weather {
-  font-size: 60px;
+  font-size: 59px;
   font-weight: normal;
   color: rgb(0, 0, 0);
-  margin-left: -10px;
+  margin-left: -30px;
   line-height: 30px;
 }
 h2 .current-weather-temp {
   font-size: 90px;
   font-weight: bold;
   color: white;
-  margin: 20px 0px 0px 90px;
+  margin: 20px 0px 0px 100px;
 }
 h2 .current-weather-type {
   text-align: center;
-  margin-right: 14px;
+  margin-left: -30px;
   font-weight: normal;
   font-size: 40px;
   color: rgb(0, 0, 0);
 }
 h2 .current-weather-emoji {
-  margin-left: -125px;
+  margin-left: -155px;
   margin-top: -7px;
-  padding-right: 25px;
+  padding-right: 35px;
   font-size: 100px;
 }
 

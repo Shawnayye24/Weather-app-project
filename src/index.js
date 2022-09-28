@@ -4,7 +4,13 @@ let todaysTime = document.querySelector("#todays-time");
 
 let date = now.getDate();
 let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let year = now.getFullYear();
 let AmOrPm = hours >= 12 ? "pm" : "am";
 let finalTime = `Time - ${hours} : ${minutes} ${AmOrPm}`;
@@ -38,7 +44,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 todaysDate.innerHTML = `${month} ${date}, ${year} `;
-todaysTime.innerHTML = `Time: ${hours}:${minutes}`;
+todaysTime.innerHTML = `Time: ${hours}:${minutes} ${AmOrPm}`;
 
 function showWeatherCondition(response) {
   console.log(response.data);
